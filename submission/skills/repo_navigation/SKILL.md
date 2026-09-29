@@ -1,0 +1,1 @@
+ this will have all the important script description call methods (contracts) and usage with input parameters
