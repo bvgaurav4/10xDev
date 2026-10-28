@@ -9,7 +9,18 @@ tools:
   - get_status
   - search_similar_code
   - submit_patch
-  - scripts.custom_script_execution
-  - scripts.get_code_neighbors
-  - scripts.get_code_subgraph
-generate_content_config: !include configs/sample_config.yaml
+  - get_code_neighbors
+  - search_similar_code
+  - get_code_subgraph
+  # - scripts.custom_script_execution
+  # - scripts.get_repo_nodes
+  # - scripts.search_repo
+  - agent_tool:
+    config_path: sub_agents/code_analyzer.yaml
+    skip_summarization: true
+  - agent_tool:
+    config_path: sub_agents/modifi_repo.yaml
+    skip_summarization: true
+generate_content_config: !include configs/sampleconfig.yaml
+skills: [skills/repo_navigation]
+generate_content_config: !include configs/sampling.yaml

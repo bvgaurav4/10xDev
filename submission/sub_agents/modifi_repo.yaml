@@ -5,12 +5,17 @@ adapter: main_lora
 instruction: !include ../prompts/analyzer.md
 tools:
   - run_command
+  - run_command
   - read_file
   - edit_file
   - write_file
   - get_status
-  - submit_patch  
-  - scripts.search_similar_code
-  - scripts.get_code_neighbors
-  - scripts.get_code_subgraph
-generate_content_config: !include ../configs/sample_config.yaml
+  - search_similar_code
+  - submit_patch
+  - get_code_neighbors
+  - search_similar_code
+  - get_code_subgraph
+  # - scripts.search_similar_code
+  # - scripts.search_repo
+  # - scripts.get_repo_nodes
+generate_content_config: !include configs/sampling.yaml

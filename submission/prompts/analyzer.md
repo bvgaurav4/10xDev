@@ -5,7 +5,7 @@
 - Map out all the Edge cases and highlight them.
 - Inspect the relevant source files to verify the identified nodes, understand the execution flow, and determine how the existing implementation relates to each FR.
 - Identify the files and components that require changes, their dependencies, potential side effects, and relevant tests.
-- Create a Markdown file in the designated workspace containing the complete analysis and proposed code change plan. Organize it by FR and include:
+- Create a Markdown file in the designated /tmp folder in workespace containing the complete analysis and proposed code change plan. Organize it by FR and include:
   - Relevant files, symbols, and code locations.
   - Existing implementation and execution flow.
   - Required changes and their rationale.
