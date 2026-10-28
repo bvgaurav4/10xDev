@@ -6,6 +6,8 @@ instruction: !include ../prompts/analyzer.md
 tools:
   - read_file
   - search_similar_code
-  - get_code_neighbors
-  - get_code_subgraph
-generate_content_config: !include ../configs/sampling.yaml
+  - get_status
+  - scripts.search_similar_code
+  - scripts.get_code_neighbors
+  - scripts.get_code_subgraph
+generate_content_config: !include ../configs/sample_config.yaml
